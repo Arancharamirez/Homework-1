@@ -7,3 +7,17 @@
 # to add elements to the lists.
 # Hint2: there is a very smart and quick implementation of this that can be found online. I'd recommend to try and 
 # come up with your own version
+
+def gcd(m,n):
+    if(n==0):
+        return m
+    else:
+        return gcd(n,m%n)
+  
+m = int(input("m:"))
+n= int(input("n:"))
+  
+print ("The gcd of" , m , "and" , n , "is : ",end="")
+print (gcd(m,n))
+
+#FINISHED AND WORKS CORRECTLYX, CHECKED
